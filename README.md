@@ -4,4 +4,4 @@ A Fantasy Premier League (FPL) dashboard which allows users to plot several key 
 - Clone repository `git clone https://github.com/kyleschan/fpl.git`
 - Switch to project root directory `cd fpl`
 - Install requirements `pip install -r requirements.txt`
-- Run app on `http://127.0.0.1:8050/` :`python app.py`
+- Run app on http://127.0.0.1:8050/ `python app.py`
