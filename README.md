@@ -1,5 +1,5 @@
 # fpl
-A Fantasy Premier League (FPL) dashboard which allows users to plot several key performance metrics such as xG, xA, and [VAPM](https://www.reddit.com/r/FantasyPL/comments/6r60fu/exploring_a_key_metric_value_added_per_1m/) against each other which allows users to obtain key insights on the statistical indicators of top players in the Premier League (EPL).
+A Fantasy Premier League (FPL) dashboard which allows users to plot several key performance metrics such as [xG, xA](https://www.optasports.com/services/analytics/advanced-metrics/), and [VAPM](https://www.reddit.com/r/FantasyPL/comments/6r60fu/exploring_a_key_metric_value_added_per_1m/) against each other which allows users to obtain key insights on the statistical indicators of top players in the Premier League (EPL).
 
 [Try out the dashboard](https://kc-fpl-dashboard.herokuapp.com/)
 
