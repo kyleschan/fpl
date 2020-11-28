@@ -37,6 +37,8 @@ app = dash.Dash(__name__,
                 ]
                 )
 
+server = app.server
+
 df = pd.read_csv('https://raw.githubusercontent.com/kyleschan/fpl_data/main/combined_df.csv')
 
 metrics = sorted(df.loc[:, 'Minutes':].columns)
