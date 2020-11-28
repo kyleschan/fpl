@@ -85,7 +85,8 @@ app.layout = html.Div([
               },
               style={'background-color': '#52575C',
                        'display': 'block',
-                       'margin': 'auto'}),
+                       'margin': 'auto',
+                       'position': 'relative'}),
     html.Br(),
     html.Div([
         html.H2('Metrics',
@@ -149,13 +150,15 @@ app.layout = html.Div([
                 persistence=True,
                 style={'background-color': '#52575C',
                        'display': 'block',
-                       'margin': 'auto'}
+                       'margin': 'auto',
+                       'position': 'relative'}
             )
         ],
         style={'display': 'block',
                'marginLeft': 'auto',
                'marginRight': 'auto',
-               'width': '25%'}),
+               'width': '25%',
+               'position': 'relative'}),
 
         html.Br(),
 
@@ -169,18 +172,24 @@ app.layout = html.Div([
                 multi=True,
                 persistence_type='session',
                 persistence=True,
-                style={'background-color': '#52575C'}
+                style={'background-color': '#52575C',
+                       'position': 'relative'}
             )
         ],
         style={'display': 'block',
                'marginLeft': 'auto',
                'marginRight': 'auto',
-               'width': '25%'}),
+               'width': '25%',
+               'overflow': 'auto',
+               'position': 'relative'}),
 
     ],
     id='dropdown',
     style={'display': 'block',
-           'float': 'center',}
+           'float': 'center',
+           'overflow': 'auto',
+           'align-items': 'center',
+           'position': 'relative'}
     ),
 ],
 )
@@ -207,11 +216,11 @@ def update_graph(xaxis,
     fig = px.scatter(filtered_df,
                      x=xaxis,
                      y=yaxis,
-                     hover_name='web_name',
+                     hover_name='player_name',
                      hover_data={
-                         'web_name': False
+                         'player_name': False
                      },
-                     text='web_name',
+                     text='player_name',
                      color='Team',
                      size=np.maximum(filtered_df['Total Points'], 0),
                      render_mode='gl',
