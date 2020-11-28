@@ -91,9 +91,9 @@ app.layout = html.Div([
                        'position': 'relative'}),
     html.Br(),
     html.Div([
-        html.H2('Metrics',
-            style={'text-align': 'center'}),
         html.Div([
+            html.H2('Metrics',
+            style={'text-align': 'center'}),
             html.P('x-axis metric'),
             dcc.Dropdown(
                 id='xaxis-column',
@@ -106,16 +106,7 @@ app.layout = html.Div([
                 style={'background-color': '#52575C',
                        'display': 'block',
                        'margin': 'auto'}
-            )
-        ],
-        style={'display': 'block',
-               'marginLeft': 'auto',
-               'marginRight': 'auto',
-               'width': '25%'}),
-
-        html.Br(),
-
-        html.Div([
+            ),
             html.P('y-axis metric'),
             dcc.Dropdown(
                 id='yaxis-column',
@@ -128,19 +119,17 @@ app.layout = html.Div([
                 style={'background-color': '#52575C',
                        'display': 'block',
                        'margin': 'auto'}
-            )
+            ),
         ],
-        style={'display': 'block',
-               'marginLeft': 'auto',
-               'marginRight': 'auto',
-               'width': '25%'}),
-
-        html.Br(),
-        html.Br(),
-        html.H2('Filters',
-            style={'text-align': 'center'}),
-
+        style={'display': 'inline-block',
+               'margin':'0 0 0',
+               'width': '50%',
+               'paddingLeft': '10vw',
+               'paddingRight': '10vw'}),
+        
         html.Div([
+            html.H2('Filters',
+            style={'text-align': 'center'}),
             html.P('Team Filter'),
             dcc.Dropdown(
                 id='team-filter',
@@ -154,17 +143,7 @@ app.layout = html.Div([
                        'display': 'block',
                        'margin': 'auto',
                        'position': 'relative'}
-            )
-        ],
-        style={'display': 'block',
-               'marginLeft': 'auto',
-               'marginRight': 'auto',
-               'width': '25%',
-               'position': 'relative'}),
-
-        html.Br(),
-
-        html.Div([
+            ),
             html.P('Position Filter'),
             dcc.Dropdown(
                 id='position-filter',
@@ -178,20 +157,21 @@ app.layout = html.Div([
                        'position': 'relative'}
             )
         ],
-        style={'display': 'block',
-               'marginLeft': 'auto',
-               'marginRight': 'auto',
-               'width': '25%',
-               'overflow': 'auto',
-               'position': 'relative'}),
+        style={'display': 'inline-block',
+               'margin': '0 0 0',
+               'width': '50%',
+               'paddingLeft': '10vw',
+               'paddingRight': '10vw'}),
+
+        html.Br(),
 
     ],
     id='dropdown',
-    style={'display': 'block',
+    style={'display': 'flex',
+           'flex-direction': 'row',
            'float': 'center',
-           'overflow': 'auto',
            'align-items': 'center',
-           'position': 'relative'}
+           'position': 'relative',}
     ),
 ],
 )
