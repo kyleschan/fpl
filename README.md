@@ -3,7 +3,7 @@ A Fantasy Premier League (FPL) dashboard which allows users to plot several key 
 
 [Try out the dashboard](https://kc-fpl-dashboard.herokuapp.com/)
 
-*Warning: The css might be buggy due in large part to css being applied to [abstractions of HTML components](https://dash.plotly.com/dash-html-components), not the components themselves.  The Dash development team recommends the use of the [Dash Enterprise Design Kit](https://plotly.com/dash/design-kit/), but the css styles used in the FPL dashboard use open-source Dash due to budget constraints...*
+*Warning: The css might be buggy due in large part to css being applied to [abstractions of HTML components](https://dash.plotly.com/dash-html-components), not the components themselves.  The Dash development team recommends the use of the [Dash Enterprise Design Kit](https://plotly.com/dash/design-kit/) for styling, but the FPL dashboard only uses open-source Dash due to budget constraints...*
 
 ## Dash
 
