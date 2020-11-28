@@ -25,3 +25,6 @@ All project data is in the `data` folder of the repo.
 - Switch to project root directory `cd fpl`
 - Install requirements `pip install -r requirements.txt`
 - Run app on http://127.0.0.1:8050/ `python app.py`
+
+## Deployment
+- Deployed on [Heroku](https://devcenter.heroku.com/articles/getting-started-with-python) via [this Dash tutorial](https://dash.plotly.com/deployment).
