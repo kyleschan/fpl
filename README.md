@@ -3,15 +3,16 @@ A Fantasy Premier League (FPL) dashboard which allows users to plot several key 
 
 [Try out the dashboard](https://kc-fpl-dashboard.herokuapp.com/)
 
-*Warning: The css is buggy due in large part to the large number of internal dependencies, but it functions properly on alternating selections of filters...*
+*Warning: The css might be buggy due in large part to css being applied to [abstractions of HTML components](https://dash.plotly.com/dash-html-components), not the components themselves.  The Dash development team advises the use of the [Dash Enterprise Design Kit](https://plotly.com/dash/design-kit/), but the css styles used in the FPL dashboard use pure Dash due to budget constraints...*
 
 ## Dash
 
-The FPL Dashboard is built on Dash, a data visualization tool for Python, which in turn is built on top of Flask under the hood.
+The FPL Dashboard is built on Dash, a data visualization tool for Python, which in turn is built on top of Flask, React.js, and Plotly.js under the hood.
 
 - [Dash](https://dash.plotly.com/)
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/tutorial/)
-
+- [React](https://reactjs.org/tutorial/tutorial.html)
+- [Plotly](https://plotly.com/javascript/getting-started/)
 ## Python Web Scraper
 
 The FPL Dashboard data was obtained using Python.  The only 3rd party packages necessary are aiohttp and understat.
