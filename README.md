@@ -1,7 +1,9 @@
 # fpl
 A Fantasy Premier League (FPL) dashboard which allows users to plot several key performance metrics against each other which allows users to obtain key insights on the statistical indicators of top players in the Premier League (EPL).
 
-[Try out the dashboard](https://kc-fpl-dashboard.herokuapp.com/) *Warning: The css is buggy due in large part to the large number of internal dependencies, but it functions properly on alternating selections of filters...*
+[Try out the dashboard](https://kc-fpl-dashboard.herokuapp.com/)
+
+*Warning: The css is buggy due in large part to the large number of internal dependencies, but it functions properly on alternating selections of filters...*
 
 ## Dash
 
